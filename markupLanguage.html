@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="validation/style.css">
+
+
+    <title>Form Validation!</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="jumbotron">
+
+        <h1> Sign up form !! </h1>
+          <form>
+              <div>
+                  <label class="form-control-label">Name</label>
+                  <input type="text" placeholder="First" class="form-control" id="firstName">
+                  <br>
+                  <input type="text" placeholder="Last"  class="form-control" id="lastName">
+                  <div id="nameCheck" class="invalid-feedback"></div>
+                  <br>
+              </div>  
+              <div>
+                  <label class="form-control-label" >Choose your username</label>
+                  <input type="text" placeholder="user id" class="form-control" id="userId">
+                  <p id="userIdCheck" class="invalid-feedback"></p>
+                  <br>
+              </div>
+              <div>
+                <label class="form-control-label" >Choose your Email</label>
+                <input type="text" placeholder="Email Address" class="form-control" id="emailId">
+                <p id="emailIdCheck" class="invalid-feedback"></p>
+                <br>
+            </div>
+              <div>
+                  <label class="form-control-label">Create password</label>
+                  <input type="password" placeholder="password" class="form-control" id="password_one">
+                  <!-- <div id="passwordCheck" class="invalid-feedback"></div> -->
+                  <br>
+                  <input type="password" placeholder="password"  class="form-control" id="password_two">
+                  <div id="passwordCheck" class="invalid-feedback"></div>
+                  <br>
+              </div>
+
+          <div class="form-group has-danger">
+                            <label class="form-control-label">Birthday</label>
+                            <br>
+                            <label >
+                              <input type="text" placeholder="Day" class="form-control" id="dayId">
+                            </label>
+                                    <label  >
+                                    <select  class="form-control" id="monthId">
+                                    <option value='0'>month</option>
+                                    <option value='1'>Janaury</option>
+                                    <option value='2'>February</option>
+                                    <option value='3'>March</option>
+                                    <option value='4'>April</option>
+                                    <option value='5'>May</option>
+                                    <option value='6'>June</option>
+                                    <option value='7'>July</option>
+                                    <option value='8'>August</option>
+                                    <option value='9'>September</option>
+                                    <option value='10'>October</option>
+                                    <option value='11'>November</option>
+                                    <option value='12'>December</option>
+                                    </select>
+                            </label>
+                            <label>
+                                <input type="text" placeholder="year" class="form-control" id="yearId">
+                            </label>
+                          <br>
+                            <p id="dobCheck" class="dob"></p>
+
+              </div>
+
+              <div class="form-group">
+                  <label>Gender</label>
+                  <select  class="form-control" id="genderSelect">
+                    <option>I am ..</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                  </select>
+                  <div id="genderCheck" class="invalid-feedback"></div>
+                </div>
+                <div>
+                    <button  id="button" type="submit" class="btn btn-primary" >Submit</button>
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+  
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+
+    <script src="validation/formvalidation.js"></script>
+  </body>
+</html>
